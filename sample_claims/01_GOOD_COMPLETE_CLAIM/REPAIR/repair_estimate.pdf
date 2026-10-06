@@ -1,0 +1,97 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 4 0 R >> >> /Contents 5 0 R >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+5 0 obj
+<< /Length 933 >>
+stream
+BT
+/F1 18 Tf
+72 750 Td
+(VEHICLE REPAIR ESTIMATE) Tj
+-72 -750 Td
+/F1 11 Tf
+72 723 Td
+() Tj
+-72 -723 Td
+/F1 13 Tf
+72 696 Td
+(Estimate Details) Tj
+-72 -696 Td
+/F1 11 Tf
+72 669 Td
+(Estimate ID: EST-3001) Tj
+-72 -669 Td
+/F1 11 Tf
+72 642 Td
+(Claim ID: CLM-2001) Tj
+-72 -642 Td
+/F1 11 Tf
+72 615 Td
+(Customer Name: Avery Morgan) Tj
+-72 -615 Td
+/F1 11 Tf
+72 588 Td
+(Workshop: Metro Motor Works) Tj
+-72 -588 Td
+/F1 11 Tf
+72 561 Td
+(Estimate Date: 2026-02-18) Tj
+-72 -561 Td
+/F1 11 Tf
+72 534 Td
+(Total Estimate Amount: INR 85,000) Tj
+-72 -534 Td
+/F1 11 Tf
+72 507 Td
+() Tj
+-72 -507 Td
+/F1 13 Tf
+72 480 Td
+(Line Items) Tj
+-72 -480 Td
+/F1 11 Tf
+72 453 Td
+(- Front bumper replacement-45000) Tj
+-72 -453 Td
+/F1 11 Tf
+72 426 Td
+(- Left headlamp-25000) Tj
+-72 -426 Td
+/F1 11 Tf
+72 399 Td
+(- Paint and labour-15000) Tj
+-72 -399 Td
+/F1 11 Tf
+72 372 Td
+() Tj
+-72 -372 Td
+/F1 9 Tf
+72 345 Td
+(Sample document generated from project data.) Tj
+-72 -345 Td
+ET
+endstream
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000241 00000 n 
+0000000311 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+1295
+%%EOF

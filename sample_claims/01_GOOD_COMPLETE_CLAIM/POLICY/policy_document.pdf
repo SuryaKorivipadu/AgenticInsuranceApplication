@@ -1,0 +1,113 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 4 0 R >> >> /Contents 5 0 R >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+5 0 obj
+<< /Length 1158 >>
+stream
+BT
+/F1 18 Tf
+72 750 Td
+(INSURANCE POLICY DOCUMENT) Tj
+-72 -750 Td
+/F1 11 Tf
+72 723 Td
+() Tj
+-72 -723 Td
+/F1 13 Tf
+72 696 Td
+(Policy Details) Tj
+-72 -696 Td
+/F1 11 Tf
+72 669 Td
+(Policy ID: POL-1001) Tj
+-72 -669 Td
+/F1 11 Tf
+72 642 Td
+(Customer ID: CUST-001) Tj
+-72 -642 Td
+/F1 11 Tf
+72 615 Td
+(Customer Name: Avery Morgan) Tj
+-72 -615 Td
+/F1 11 Tf
+72 588 Td
+(Policy Type: Comprehensive) Tj
+-72 -588 Td
+/F1 11 Tf
+72 561 Td
+(Status: ACTIVE) Tj
+-72 -561 Td
+/F1 11 Tf
+72 534 Td
+(Period: 2026-01-01 to 2026-12-31) Tj
+-72 -534 Td
+/F1 11 Tf
+72 507 Td
+() Tj
+-72 -507 Td
+/F1 13 Tf
+72 480 Td
+(Vehicle Details) Tj
+-72 -480 Td
+/F1 11 Tf
+72 453 Td
+(Registration Number: IL8K4M2) Tj
+-72 -453 Td
+/F1 11 Tf
+72 426 Td
+(Description: 2024 sedan) Tj
+-72 -426 Td
+/F1 11 Tf
+72 399 Td
+() Tj
+-72 -399 Td
+/F1 13 Tf
+72 372 Td
+(Coverage Details) Tj
+-72 -372 Td
+/F1 11 Tf
+72 345 Td
+(Covered Perils: Collision; Accident; Theft) Tj
+-72 -345 Td
+/F1 11 Tf
+72 318 Td
+(Coverage Limit: INR 500,000) Tj
+-72 -318 Td
+/F1 11 Tf
+72 291 Td
+(Deductible: INR 5,000) Tj
+-72 -291 Td
+/F1 11 Tf
+72 264 Td
+() Tj
+-72 -264 Td
+/F1 9 Tf
+72 237 Td
+(Sample document generated from project data.) Tj
+-72 -237 Td
+ET
+endstream
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000241 00000 n 
+0000000311 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+1521
+%%EOF
