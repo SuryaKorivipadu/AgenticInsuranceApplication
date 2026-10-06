@@ -1,0 +1,4 @@
+customer_id,full_name,date_of_birth,email,phone,address,kyc_status
+CUST-001,Avery Morgan,1988-04-12,avery.morgan@example.com,+1-202-555-0101,"101 Example Street, Springfield, IL 62701",VERIFIED
+CUST-002,Jordan Taylor,1992-09-23,jordan.taylor@example.com,+1-202-555-0102,"202 Sample Avenue, Madison, WI 53703",VERIFIED
+CUST-003,Riley Chen,1985-01-30,riley.chen@example.com,+1-202-555-0103,"303 Demo Road, Austin, TX 78701",VERIFIED

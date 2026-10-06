@@ -1,0 +1,10 @@
+claim_id,customer_id,policy_id,incident_date,incident_type,incident_description,claimed_amount,status
+CLM-2001,CUST-001,POL-1001,2026-02-14,COLLISION,Front impact at a junction; front bumper and left headlamp damaged,85000,OPEN
+CLM-2002,CUST-001,POL-1001,2026-05-08,THEFT,Vehicle side mirror and tools stolen while parked overnight,18500,OPEN
+CLM-2003,CUST-001,POL-1001,2026-09-17,ACCIDENT,Rear-end impact in slow traffic; trunk and rear bumper damaged,62000,OPEN
+CLM-2004,CUST-002,POL-1002,2025-03-11,COLLISION,Passenger-side doors dented after contact with another vehicle,47000,OPEN
+CLM-2005,CUST-002,POL-1002,2025-07-26,ACCIDENT,Vehicle struck a roadside barrier; front fender and wheel damaged,38500,OPEN
+CLM-2006,CUST-002,POL-1002,2025-11-03,THIRD_PARTY,Low-speed intersection collision resulting in third-party property damage,72000,OPEN
+CLM-2007,CUST-003,POL-1003,2026-03-19,COLLISION,Front bumper and grille damaged in a parking-lot collision,54000,OPEN
+CLM-2008,CUST-003,POL-1003,2026-06-02,FIRE,Engine compartment wiring damaged by a small electrical fire,128000,OPEN
+CLM-2009,CUST-003,POL-1003,2026-08-22,ACCIDENT,Side impact at a junction; passenger-side doors and side panel damaged,96000,OPEN

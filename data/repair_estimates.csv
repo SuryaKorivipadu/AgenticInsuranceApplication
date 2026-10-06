@@ -1,0 +1,8 @@
+estimate_id,claim_id,workshop,estimate_date,total_amount,currency,line_items
+EST-3001,CLM-2001,Metro Motor Works,2026-02-18,85000,INR,"Front bumper replacement-45000,Left headlamp-25000,Paint and labour-15000"
+EST-3002,CLM-2002,Cityline Auto Care,2026-05-12,18500,INR,"Side mirror replacement-9500,Tool replacement-6000,Labour-3000"
+EST-3003,CLM-2003,Northside Collision Centre,2026-09-21,62000,INR,"Rear bumper repair-28000,Trunk panel repair-22000,Paint and labour-12000"
+EST-3004,CLM-2004,Precision Panel Garage,2025-03-15,47000,INR,"Passenger door repair-18000,Second door dent repair-16000,Paint and labour-13000"
+EST-3005,CLM-2005,Roadstar Auto Repair,2025-07-30,38500,INR,"Front fender repair-15000,Wheel replacement-14000,Alignment and labour-9500"
+EST-3006,CLM-2007,Metro Motor Works,2026-03-23,54000,INR,"Front bumper repair-22000,Grille replacement-18000,Paint and labour-14000"
+EST-3007,CLM-2009,Precision Panel Garage,2026-08-26,96000,INR,"Passenger door replacement-42000,Side panel repair-34000,Paint and labour-20000"
