@@ -1,0 +1,6 @@
+In this project I need to build 3 agents
+agent 1. claim intake - receive input text about claim data, supporting files like damage pdf details and photos and also talk to agent 2 to verify policy, agent 3 to assess damage and also ask user for missing info and also suggest next steps as final response
+agent 2. policy and eligibility agent - responsible for customer/policy/coverage/eligibility checks based on insurance_claims.db and data present in csv files in data folder
+it should identify customers and policies, verify dates/status/coverage, inspect relevant claim history and report missing or conflicting info
+agent 3: claim and damage assessment agent - responsible for assessing claim evidence and vehicle damage info. it should work with text, pdf, docx, and image evidences. Then assess visible damage, interpret repair estimates, identify missing, inconsistent or suspicious evidence to identify fraud, and finally return a structured JSON of assessment details.
+This agent may use AI through methods in app/utils/call_ai.py

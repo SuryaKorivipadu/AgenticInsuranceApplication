@@ -16,8 +16,20 @@
             "jinja": true,
             "justMyCode": true,
             "env": {
-                "PYTHONPATH": "${workspaceFolder}",
+                "PYTHONPATH": "${workspaceFolder}"
             },
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Python MCP Server",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "app.mcp.server",
+            "cwd": "${workspaceFolder}",
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}"
+            },
+            "justMyCode": true,
             "console": "integratedTerminal"
         }
     ]
