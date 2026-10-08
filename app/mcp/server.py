@@ -138,6 +138,50 @@ def get_customer_claim_history(
     }
 
 
+@mcp.tool()
+def get_claim_details(claim_id: str) -> dict[str, object]:
+    """Return claim incident details with its linked vehicle information."""
+    row = fetch_one(
+        """
+        SELECT c.claim_id, c.customer_id, c.policy_id, c.incident_date,
+               c.incident_type, c.incident_description, c.claimed_amount,
+               c.status, p.vehicle_registration, p.vehicle_description
+        FROM claims_history AS c
+        JOIN policies AS p ON p.policy_id = c.policy_id
+        WHERE c.claim_id = ?
+        """,
+        (claim_id,),
+    )
+    return {"found": row is not None, "claim": dict(row) if row else None}
+
+
+@mcp.tool()
+def get_repair_estimates(claim_id: str) -> dict[str, object]:
+    """Return repair estimates for a known claim ID."""
+    claim = fetch_one(
+        "SELECT claim_id FROM claims_history WHERE claim_id = ?",
+        (claim_id,),
+    )
+    if claim is None:
+        return {"claim_found": False, "claim_id": claim_id, "estimates": []}
+
+    estimates = fetch_all(
+        """
+        SELECT estimate_id, claim_id, workshop, estimate_date,
+               total_amount, currency, line_items
+        FROM repair_estimates
+        WHERE claim_id = ?
+        ORDER BY estimate_date DESC, estimate_id
+        """,
+        (claim_id,),
+    )
+    return {
+        "claim_found": True,
+        "claim_id": claim_id,
+        "estimates": [dict(row) for row in estimates],
+    }
+
+
 if __name__ == "__main__":
     mcp.run(
         transport="streamable-http",

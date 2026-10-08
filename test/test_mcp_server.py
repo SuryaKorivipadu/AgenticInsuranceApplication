@@ -15,6 +15,8 @@ async def _run_mcp_integration_checks() -> None:
             "get_customer_policies",
             "check_policy_for_incident",
             "get_customer_claim_history",
+            "get_claim_details",
+            "get_repair_estimates",
         } <= tool_names
 
         health_result = await client.call_tool("health_check", {})
@@ -144,6 +146,62 @@ async def _run_mcp_integration_checks() -> None:
             "customer_found": False,
             "customer_id": "UNKNOWN",
             "claims": [],
+        }
+
+        # Verify the damage agent can retrieve claim facts and linked vehicle details.
+        claim_result = await client.call_tool(
+            "get_claim_details", {"claim_id": "CLM-2001"}
+        )
+        assert claim_result.is_error is False
+        claim = claim_result.structured_content["claim"]
+        assert claim["claim_id"] == "CLM-2001"
+        assert claim["incident_type"] == "COLLISION"
+        assert claim["vehicle_registration"] == "IL8K4M2"
+        assert claim["vehicle_description"] == "2024 sedan"
+
+        missing_claim = await client.call_tool(
+            "get_claim_details", {"claim_id": "UNKNOWN"}
+        )
+        assert missing_claim.is_error is False
+        assert missing_claim.structured_content == {
+            "found": False,
+            "claim": None,
+        }
+
+        # Verify estimates are claim-scoped and preserve their itemized details.
+        estimates_result = await client.call_tool(
+            "get_repair_estimates", {"claim_id": "CLM-2001"}
+        )
+        assert estimates_result.is_error is False
+        estimates = estimates_result.structured_content["estimates"]
+        seeded_estimate = next(
+            estimate
+            for estimate in estimates
+            if estimate["estimate_id"] == "EST-3001"
+        )
+        assert seeded_estimate["workshop"] == "Metro Motor Works"
+        assert seeded_estimate["total_amount"] == 85000
+        assert seeded_estimate["currency"] == "INR"
+        assert "Front bumper replacement-45000" in seeded_estimate["line_items"]
+
+        missing_estimates = await client.call_tool(
+            "get_repair_estimates", {"claim_id": "CLM-2008"}
+        )
+        assert missing_estimates.is_error is False
+        assert missing_estimates.structured_content == {
+            "claim_found": True,
+            "claim_id": "CLM-2008",
+            "estimates": [],
+        }
+
+        unknown_claim_estimates = await client.call_tool(
+            "get_repair_estimates", {"claim_id": "UNKNOWN"}
+        )
+        assert unknown_claim_estimates.is_error is False
+        assert unknown_claim_estimates.structured_content == {
+            "claim_found": False,
+            "claim_id": "UNKNOWN",
+            "estimates": [],
         }
 
 
