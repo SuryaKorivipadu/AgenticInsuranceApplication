@@ -2,9 +2,11 @@ from typing import Dict
 
 from fastapi import FastAPI
 
+from app.api.api import router as api_router
 from app.utils.logging import get_logger
 
 app = FastAPI()
+app.include_router(api_router, prefix="/api")
 logger = get_logger(__name__)
 
 

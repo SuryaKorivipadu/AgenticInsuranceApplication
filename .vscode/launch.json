@@ -31,6 +31,30 @@
             },
             "justMyCode": true,
             "console": "integratedTerminal"
+        },
+        {
+            "name": "Python Policy Agent (A2A)",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "app.agents.policy_agent",
+            "cwd": "${workspaceFolder}",
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}"
+            },
+            "justMyCode": true,
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Python Damage Agent (A2A)",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "app.agents.damage_agent",
+            "cwd": "${workspaceFolder}",
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}"
+            },
+            "justMyCode": true,
+            "console": "integratedTerminal"
         }
     ]
 }
